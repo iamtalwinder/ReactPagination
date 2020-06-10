@@ -3,11 +3,9 @@ import query from "../utils/MYSQLQuery";
 
 const router = express.Router();
 
-router.get("/getData/:startPosition/:count", async (req, res) => {
+router.get("/dataCount", async (req, res) => {
 	try {
-		const result = await query(
-			`SELECT *FROM data LIMIT ${req.params.startPosition}, ${req.params.count}`
-		);
+		const result = await query(`SELECT COUNT(number) AS count FROM data`);
 		return res.status(200).send(result);
 	} catch (err) {
 		console.log(err);
