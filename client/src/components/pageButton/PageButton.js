@@ -3,10 +3,8 @@ import "./PageButton.css";
 
 function PageButton(props) {
 	const handlePageButtonClick = (number, event) => {
-		const currentActive = document.getElementsByClassName("active");
-		if (currentActive.length) {
-			currentActive[0].className = "pageButton";
-		}
+		const currentActive = document.getElementsByClassName("active")[0];
+		currentActive.className = "pageButton";
 		event.target.className += " active";
 
 		if (number > 4 && number <= props.totalPages - 3) {
