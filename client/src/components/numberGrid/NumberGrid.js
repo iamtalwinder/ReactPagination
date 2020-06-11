@@ -5,8 +5,8 @@ import "./NumberGrid.css";
 function NumberGrid(props) {
 	return (
 		<div className="numberGridContainer">
-			{props.numbers.map((number) => (
-				<NumberCard number={number} />
+			{props.numbers.map((numberObj) => (
+				<NumberCard key={numberObj.number} number={numberObj.number} />
 			))}
 		</div>
 	);
