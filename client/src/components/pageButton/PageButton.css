@@ -1,0 +1,17 @@
+.pageButton {
+	color: black;
+	width: 10%;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	display: flex;
+	justify-content: center;
+}
+
+.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+.pageButton:hover:not(.active) {
+	background-color: #ddd;
+}

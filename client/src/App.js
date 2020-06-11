@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NumberGrid from "./components/numberGrid/NumberGrid";
+import PageList from "./components/pageList/PageList";
 
 function App() {
 	// const [pages, setPages] = useState(null);
@@ -20,7 +21,7 @@ function App() {
 
 	// if (loading) return <p>Loading..</p>;
 	// if (error) return <p>Error</p>;
-	return <NumberGrid numbers={[1, 2, 3, 4, 5, 6, 7, 8, 9]} />;
+	return <PageList totalPages={24} />;
 }
 
 export default App;
