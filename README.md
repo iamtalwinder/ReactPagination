@@ -1,1 +1,1 @@
-Simple React pagination app
+Simple React pagination and infinite-scroll app
