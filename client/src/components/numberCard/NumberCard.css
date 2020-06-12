@@ -3,8 +3,10 @@
 	border: 5px solid #113778;
 	display: flex;
 	justify-content: center;
+	height: 20vh;
 }
 
 .number {
 	color: white;
+	align-self: center;
 }
